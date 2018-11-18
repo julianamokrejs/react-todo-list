@@ -1,14 +1,16 @@
 import React from 'react'
+import { Link as LinkRouter } from 'react-router-dom'
 import './link.css'
+
 
 function Link(props){
     return(
-        <a 
+        <LinkRouter 
         id={props.id}
         className='link'
-        href={props.href}>
+        to={props.href}>
         {props.children}
-        </a>
+        </LinkRouter>
     )
 }
 
